@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Video Downloader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lang-switch">
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('ur')">UR</button>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h1 id="title">Instagram Downloader By Shahzaib Tech</h1>
+    <p id="subtitle">Download reels & videos in HD</p>
+
+    <input id="url" type="text" placeholder="Paste Instagram link here">
+    <button id="fetchBtn" onclick="fetchVideo()">Get Video</button>
+
+    <div id="loader"></div>
+
+    <div id="preview" class="hidden">
+      <video id="video" controls></video>
+      <a id="downloadBtn" download>Download Video</a>
+    </div>
+  </div>
+
+  <footer>© 2025 <b>Shahzaib Tech</b></footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
